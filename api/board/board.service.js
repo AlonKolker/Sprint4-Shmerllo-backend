@@ -2,15 +2,15 @@ const dbService = require('../../services/db.service')
 const logger = require('../../services/logger.service')
 const ObjectId = require('mongodb').ObjectId
 
-async function query(filterBy) {
+async function query() {
     try {
-        const filterCriteria = _buildFilterCriteria(filterBy)
-        const sortCriteria = _buildSortCriteria(filterBy)
-        
+        // const filterCriteria = _buildFilterCriteria(filterBy)
+        // const sortCriteria = _buildSortCriteria(filterBy)
+      
 
         const collection = await dbService.getCollection('board')
         // console.log('collection')
-        var boards = await collection.find(filterCriteria).sort(sortCriteria).toArray()
+        var boards = await collection.find({}).toArray()
         // console.log('boards',boards);
         return boards
     } catch (err) {

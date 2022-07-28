@@ -11,7 +11,7 @@
     "author": "Me",
     "license": "ISC",
     "dependencies": {
-        "bcrypt": "^5.0.0",
+        "bcrypt": "^5.0.1",
         "cookie-parser": "^1.4.6",
         "cors": "^2.8.5",
         "cryptr": "^6.0.3",
@@ -20,6 +20,6 @@
         "socket.io": "^4.5.1"
     },
     "devDependencies": {
-        "nodemon": "1.18.10"
+        "nodemon": "^2.0.19"
     }
 }

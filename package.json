@@ -1,8 +1,8 @@
 {
-  "name": "backend",
+  "name": "server",
   "version": "1.0.0",
   "description": "production ready server",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "set NODE_ENV=development && nodemon server.js",
     "server:dev": "set NODE_ENV=development && nodemon server.js",

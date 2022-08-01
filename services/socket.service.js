@@ -24,6 +24,17 @@ function setupSocketAPI(http) {
             socket.myBoard = board
             
         })
+        socket.on('set-curr-task', taskId => {
+            if (socket.myTask === taskId) return
+            if (socket.myTask) {
+                socket.leave(socket.myTask)
+                logger.info(`Socket is leaving task ${socket.myTask} [id: ${socket.id}]`)
+            }
+            console.log('taskId', taskId)
+            socket.join(taskId)
+            socket.myTask = taskId
+            console.log('socket.myTask', socket.myTask)
+        })    
         socket.on('set-user-socket', userId => {
             logger.info(`Setting socket.userId = ${userId} for socket [id: ${socket.id}]`)
             socket.userId = userId
@@ -34,8 +45,11 @@ function setupSocketAPI(http) {
             delete socket.userId
         })
         socket.on('board-updated', (board) => {
-            // console.log('brodcasting', board)
             broadcast({type:'update-board', data: board, room: socket.myBoard, userId: socket.userId})
+        })
+        socket.on('task-updated', (task) => {
+            console.log('brodcasting', task)
+            broadcast({type:'update-task', data: task, room: socket.myTask, userId: socket.userId})
         })
         socket.on('toggele-member', (notification) => {
             console.log('emitToUser',  notification,  'userId:', socket.userId )

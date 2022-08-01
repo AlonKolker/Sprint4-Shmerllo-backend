@@ -6,8 +6,8 @@ if (process.env.NODE_ENV === 'production') {
   config = require('./prod')
 } else {
   // we are in development - return the dev keys!!!
-  // config = require('./dev')//Change by alon 29.7.22 9:47
-  config = require('./prod')
+  config = require('./dev')//Change by alon 29.7.22 9:47
+  // config = require('./prod')
 
 }
 module.exports = config

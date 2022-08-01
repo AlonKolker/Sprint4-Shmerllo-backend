@@ -1,30 +1,29 @@
- [
-    {
-      "username": "THT",
-      "fullname": "Tal Hammer Topaz",
-      "password": "123",
-      "imgUrl":
-        "https://ca.slack-edge.com/T035GULFZRD-U03AHSR218R-c8967c6358b4-512"
-    },
-    {
-      "username": "AK",
-      "fullname": "Alon Kolker",
-      "password": "123",
-      "imgUrl":
-        "https://ca.slack-edge.com/T035GULFZRD-U03BSQW83JN-2722b50680bb-512"
-    },
-    {
-      "username": "AC",
-      "fullname": "Alen Alen Chernick",
-      "password": "123",
-      "imgUrl":
-        "https://ca.slack-edge.com/T035GULFZRD-U039NGTS4LS-ecf5fa0f2299-512"
-    },
-    {
-      "username": "LS",
-      "fullname": "Lihi Sered",
-      "password": "123",
-      "imgUrl":
-        "https://ca.slack-edge.com/T035GULFZRD-U03BUP78HDG-30bde5111b5b-512"
-    }
-  ]
+[{
+  "_id" : ObjectId("62e4266dff763f0b995957a9"),
+  "username" : "THT",
+  "fullname" : "Tal Hammer Topaz",
+  "password" : "123",
+  "imgUrl" : "https://ca.slack-edge.com/T035GULFZRD-U03AHSR218R-c8967c6358b4-512"
+},
+{
+  "_id" : ObjectId("62e4267aff763f0b995957aa"),
+  "username" : "AK",
+  "fullname" : "Alon Kolker",
+  "password" : "123",
+  "imgUrl" : "https://ca.slack-edge.com/T035GULFZRD-U03BSQW83JN-2722b50680bb-512"
+},
+{
+  "_id" : ObjectId("62e4267eff763f0b995957ab"),
+  "username" : "AC",
+  "fullname" : "Alen Chernick",
+  "password" : "123",
+  "imgUrl" : "https://ca.slack-edge.com/T035GULFZRD-U039NGTS4LS-ecf5fa0f2299-512"
+},
+{
+  "_id" : ObjectId("62e42686ff763f0b995957ac"),
+  "username" : "LS",
+  "fullname" : "Lihi Sered",
+  "password" : "123",
+  "imgUrl" : "https://ca.slack-edge.com/T035GULFZRD-U03BUP78HDG-30bde5111b5b-512"
+}
+]
